@@ -477,4 +477,5 @@ PRODUCT_BOOT_JARS += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
     hardware/xiaomi
