@@ -2062,6 +2062,10 @@ vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
 
+# Camera Hacks
+vendor/lib/vndk/libbinder.so|878062dea4925dd303ff026e07266f90fdb52c02
+vendor/lib/vndk-sp/libcutils.so|80f6e21fc5aade324dbc53967f6d129f9846ef29
+
 # CNE - from LA.UM.8.6.r1-04400-89xx.0
 etc/cne/Nexus/ATT/ATT_profiles.xml|a0039cb3a4c5a4ca1adf897904b61c91e32d06f7
 etc/cne/Nexus/ROW/ROW_profiles.xml|e3907ff71cbbe0f1073ec1bf0223d26c8282aa35
