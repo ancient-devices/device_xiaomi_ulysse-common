@@ -169,6 +169,11 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    libbt-vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
