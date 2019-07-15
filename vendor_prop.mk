@@ -66,6 +66,10 @@ persist.vendor.camera.HAL3.enabled=1 \
 vendor.camera.hal1.packagelist=com.whatsapp,com.instagram.android,com.skype.raider,com.google.android.talk \
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.faceunlock,com.android.camera,org,org.lineageos.snap
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.charger.enable_suspend=true
+
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1 \
