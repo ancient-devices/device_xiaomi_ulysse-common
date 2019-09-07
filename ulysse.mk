@@ -157,7 +157,7 @@ PRODUCT_PACKAGES += \
     Snap
 
 PRODUCT_PACKAGES += \
-    libgui_vendor
+    libwui
 
 # Configstore
 PRODUCT_PACKAGES += \

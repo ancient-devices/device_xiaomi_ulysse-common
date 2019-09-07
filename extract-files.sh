@@ -79,4 +79,12 @@ fi
 CAMERA2_SENSOR_MODULES="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
 sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$CAMERA2_SENSOR_MODULES"
 
+# Wrap libgui_vendor into libwui
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmsw_platform.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera_ppeiscore.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_stats_modules.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmsw_detail_enhancement.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libmmsw_platform.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libmmsw_detail_enhancement.so
+
 "$MY_DIR"/setup-makefiles.sh
