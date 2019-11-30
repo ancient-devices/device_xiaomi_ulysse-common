@@ -1,1 +1,2 @@
 allow untrusted_app exported_camera_prop:file { read open getattr };
+get_prop(untrusted_app, theme_prop);
