@@ -177,6 +177,9 @@ PRODUCT_PACKAGES += \
     libandroid_shim \
     libwui
 
+PRODUCT_PACKAGES += \
+    android.hardware.camera.common@1.0
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
