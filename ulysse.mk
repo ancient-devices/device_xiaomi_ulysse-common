@@ -413,6 +413,7 @@ $(call inherit-product, build/target/product/verity.mk)
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package \
+    vndk-ext \
     libstdc++.vendor
 
 # Thermal
