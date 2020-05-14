@@ -217,6 +217,10 @@ VENDOR_SECURITY_PATCH := 2020-05-05
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+/vendor/lib/libmmcamera_ppeiscore.so|libshim_camera.so
+
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
