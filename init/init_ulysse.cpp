@@ -122,4 +122,7 @@ void vendor_load_properties()
     property_set("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
+
+    // Pixel identification
+    property_override("ro.build.fingerprint","google/flame/flame:10/QQ3A.200605.001/6392402:user/release-keys");
 }
