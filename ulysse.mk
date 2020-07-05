@@ -123,7 +123,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    camera.msm8953 \
+    camera.msm8937 \
     libmm-qcamera \
     Snap
 
@@ -140,10 +140,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    copybit.msm8953 \
-    gralloc.msm8953 \
-    hwcomposer.msm8953 \
-    memtrack.msm8953 \
+    copybit.msm8937 \
+    gralloc.msm8937 \
+    hwcomposer.msm8937 \
+    memtrack.msm8937 \
     libdisplayconfig \
     liboverlay \
     libqdMetaData.system \
@@ -230,7 +230,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
-    lights.msm8953
+    lights.msm8937
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -362,7 +362,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    thermal.msm8953
+    thermal.msm8937
 
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
@@ -381,7 +381,7 @@ PRODUCT_COPY_FILES += \
 
 # VR
 PRODUCT_PACKAGES += \
-    vr.msm8953
+    vr.msm8937
 
 PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl \
