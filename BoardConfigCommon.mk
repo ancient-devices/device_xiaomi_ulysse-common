@@ -169,6 +169,8 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware \
     /mnt/vendor/persist:/persist
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
