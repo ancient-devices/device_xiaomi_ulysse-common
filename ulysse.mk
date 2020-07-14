@@ -324,6 +324,8 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.target.rc \
+    init.recovery.qcom.rc \
+    init.recovery.qcom.usb.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
