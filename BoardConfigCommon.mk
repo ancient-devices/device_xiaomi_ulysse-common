@@ -189,12 +189,14 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_PER_MGR_ENABLED := true
 
 # Power
+TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 TARGET_USES_INTERACTION_BOOST := true
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 
 # RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Recovery
@@ -203,6 +205,9 @@ TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab_AB.recovery.qcom
 else
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.recovery.qcom
 endif
+
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2020-05-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
