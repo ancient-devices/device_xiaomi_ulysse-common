@@ -33,6 +33,12 @@ vendor.voice.playback.conc.disabled=true \
 vendor.voice.record.conc.disabled=false \
 vendor.voice.voip.conc.disabled=true
 
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.audio.fluence.speaker=true \
+persist.vendor.audio.fluence.voicecall=true \
+persist.vendor.audio.fluence.voicerec=false \
+ro.vendor.audio.sdk.fluencetype=fluence
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
@@ -52,6 +58,10 @@ persist.camera.isp.clock.optmz=0 \
 persist.camera.stats.test=5 \
 persist.vendor.qti.telephony.vt_cam_interface=1 \
 vidc.enc.dcvs.extra-buff-count=2
+
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
+persist.camera.dual.camera=0
 
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
