@@ -134,7 +134,8 @@ vendor.vidc.dec.downscalar_width=1920 \
 vendor.vidc.disable.split.mode=1 \
 vendor.vidc.enc.disable.pq=true \
 vendor.vidc.enc.disable_bframes=1 \
-vendor.video.disable.ubwc=1
+vendor.video.disable.ubwc=1 \
+vendor.vidc.enc.narrow.searchrange=1
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -175,10 +176,10 @@ persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
 persist.vendor.data.iwlan.enable=true \
 ril.subscription.types=NV,RUIM \
-rild.libargs=-d/dev/smd0 \
+rild.libargs=-d /dev/smd0 \
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=22,20 \
+ro.telephony.default_network=22,22 \
 service.qti.ims.enabled=1
 
 # Time Services
@@ -196,6 +197,10 @@ sys.use_fifo_ui=1
 # Usb
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.usb.config.extra=none
+
+# Voltage
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.cutoff_voltage_mv=3200
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
