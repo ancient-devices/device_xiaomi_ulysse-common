@@ -460,3 +460,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/xiaomi
