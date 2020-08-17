@@ -68,6 +68,18 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
     property_override(vendor_prop, value);
 }
 
+void set_device_ugglite()
+{
+    property_override_dual("ro.product.device", "ro.product.vendor.device", "ugglite");
+    property_override_dual("ro.product.model", "ro.product.vendor.model", "Redmi Note 5A Lite");
+}
+
+void set_device_ugg()
+{
+    property_override_dual("ro.product.device", "ro.product.vendor.device", "ugg");
+    property_override_dual("ro.product.model", "ro.product.vendor.model", "Redmi Note 5A Prime");
+}
+
 void check_device()
 {
     struct sysinfo sys;
@@ -90,6 +102,9 @@ void check_device()
         heaptargetutilization = "0.6";
         heapminfree = "8m";
         heapmaxfree = "16m";
+
+        // set device name to ugg
+        set_device_ugg();
     } else if (sys.totalram > 2048ull * 1024 * 1024) {
         // from - phone-xhdpi-2048-dalvik-heap.mk
         heapstartsize = "8m";
@@ -98,6 +113,9 @@ void check_device()
         heaptargetutilization = "0.75";
         heapminfree = "512k";
         heapmaxfree = "8m";
+
+        // set device name to ugg
+        set_device_ugg();
     } else {
         // from - phone-xhdpi-2048-dalvik-heap.mk
         heapstartsize = "8m";
@@ -109,6 +127,9 @@ void check_device()
 
         // Enable low ram flag
         property_override("ro.config.low_ram", "true");
+
+        // set device name to ugglite
+        set_device_ugglite();
     }
 }
 
