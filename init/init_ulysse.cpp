@@ -125,9 +125,6 @@ void check_device()
         heapminfree = "512k";
         heapmaxfree = "8m";
 
-        // Enable low ram flag
-        property_override("ro.config.low_ram", "true");
-
         // set device name to ugglite
         set_device_ugglite();
     }
