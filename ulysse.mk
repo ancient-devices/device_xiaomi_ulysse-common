@@ -342,7 +342,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.class_main.sh \
     init.qcom.bt.sh \
     init.qcom.post_boot.sh \
     move_time_data.sh \
