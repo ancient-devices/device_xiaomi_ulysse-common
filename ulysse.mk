@@ -152,6 +152,9 @@ PRODUCT_PACKAGES += \
     libshim_camera \
     Snap
 
+PRODUCT_PACKAGES += \
+    libgui_vendor
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
