@@ -157,6 +157,7 @@ PRODUCT_PACKAGES += \
     Snap
 
 PRODUCT_PACKAGES += \
+    libandroid_shim \
     libwui
 
 # Configstore
