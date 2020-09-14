@@ -87,4 +87,8 @@ sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietar
 sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libmmsw_platform.so
 sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libmmsw_detail_enhancement.so
 
+# Shim libandroid for camera blobs
+patchelf --replace-needed libandroid.so libandroid_shim.so "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_stats_modules.so
+patchelf --replace-needed libandroid.so libandroid_shim.so "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmpbase.so
+
 "$MY_DIR"/setup-makefiles.sh
