@@ -42,7 +42,6 @@
 #include "property_service.h"
 
 using android::base::GetProperty;
-using android::init::property_set;
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
@@ -50,6 +49,10 @@ char const *heapsize;
 char const *heapminfree;
 char const *heapmaxfree;
 char const *heaptargetutilization;
+
+int property_set(const char *key, const char *value) {
+    return __system_property_set(key, value);
+}
 
 void property_override(char const prop[], char const value[])
 {
