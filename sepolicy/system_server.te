@@ -1,0 +1,5 @@
+# power supply
+allow system_server sysfs_battery_supply:file { read open getattr };
+# smart charging
+allow system_server sysfs_battery_supply:file { getattr open read write };
+
