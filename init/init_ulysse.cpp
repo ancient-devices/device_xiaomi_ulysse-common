@@ -142,9 +142,9 @@ void vendor_load_properties()
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
 
     // Pixel identification
-    property_override("ro.build.description","coral-user 10 QQ3A.200805.001 6578210 release-keys");
-    property_override("ro.build.fingerprint","google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys");
-    property_override("ro.system.build.fingerprint","google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys");
+    property_override("ro.build.description","coral-user 11 RP1A.200720.009 6720564 release-keys");
+    property_override("ro.build.fingerprint","google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
+    property_override("ro.system.build.fingerprint","google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
 
     // Front Flashlight
     property_set("persist.s5k3p8sp.flash.low","320");
