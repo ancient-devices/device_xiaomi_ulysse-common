@@ -219,3 +219,6 @@ service ppd /vendor/bin/mm-pp-dpps
 
 on property:apexd.status=ready
     mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
+
+on boot
+    mount none /vendor/firmware_mnt /firmware bind
