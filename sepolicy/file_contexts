@@ -37,6 +37,9 @@
 # Sensors
 /(mnt/vendor)/persist/sensors(/.*)?                                     u:object_r:persist_sensors_file:s0
 
+# Time
+/system/bin/move_time_data\.sh            u:object_r:move-time-data-sh_exec:s0
+
 # Block devices
 /dev/block/platform/soc/7824900.sdhci/by-name/aboot             u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/7824900.sdhci/by-name/cmnlib             u:object_r:custom_ab_block_device:s0
