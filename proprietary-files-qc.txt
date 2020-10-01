@@ -119,10 +119,10 @@ vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|39f1d884c5cd40691bc9349bf57372c68269ef
 vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|bf2bec4b1934f7f006ee40359b6186855b400e04
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|49d26f0e6530f3f60dbaaa800378c1e57863965c
 
-# Audio dirac - from xiaomi
-vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+# Audio dirac - from ugg 7.1.2 N2G47H V11.0.2.0.NDKMIXM
+vendor/etc/diracmobile.config|b99e9492e77e52ca3a511feae0409d59f6aebb87
 vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
-vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
+vendor/lib/soundfx/libdirac.so|e92652ab578e90bb9e9b09553c3554f27cb7c07f
 
 # Audiosphere - from LA.UM.8.6.2.r1-08100-89xx.0 msm8937
 etc/permissions/audiosphere.xml|3c6d8f14bd99e52a424282fd5d0a5b9b06485dea
