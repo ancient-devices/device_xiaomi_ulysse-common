@@ -221,7 +221,7 @@ endif
 TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-06-05
+VENDOR_SECURITY_PATCH := 2020-03-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
