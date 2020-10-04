@@ -88,4 +88,9 @@ sed -i "s/libgui/libwui/g" "$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/pro
 patchelf --replace-needed libandroid.so libandroid_shim.so "$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libmmcamera2_stats_modules.so
 patchelf --replace-needed libandroid.so libandroid_shim.so "$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libmpbase.so
 
+# Hex edit libwfdnative.so to link missing symbols
+"$ANDROID_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib64/libwfdnative.so)
+    patchelf --add-needed "libshim_wfd.so" "${2}"
+    ;;
+
 "$MY_DIR/setup-makefiles.sh"

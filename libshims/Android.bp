@@ -23,3 +23,11 @@ cc_library_shared {
         "libshims_dpmd.cpp",
     ]
 }
+
+cc_library_shared {
+    name: "libshim_wfd",
+    srcs : [
+         "wfd_shim.cpp",
+    ],
+}
+

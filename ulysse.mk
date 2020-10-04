@@ -464,7 +464,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshims_dpmd
+    libshims_dpmd \
+    libshim_wfd
 
 # Thermal
 PRODUCT_COPY_FILES += \
