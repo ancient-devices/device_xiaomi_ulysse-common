@@ -74,8 +74,8 @@ persist.vendor.dpm.loglevel=0
 
 # Core Control
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.core_ctl_min_cpu=2 \
-ro.core_ctl_max_cpu=4
+ro.vendor.qti.core_ctl_min_cpu=2 \
+ro.vendor.qti.core_ctl_max_cpu=4
 
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -204,11 +204,11 @@ net.tcp.2g_init_rwnd=10
 
 # Trim
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.sys.fw.use_trim_settings=true
-ro.sys.fw.empty_app_percent=50
-ro.sys.fw.trim_empty_percent=100
-ro.sys.fw.trim_cache_percent=100
-ro.sys.fw.trim_enable_memory=2147483648
+ro.vendor.qti.sys.fw.use_trim_settings=true \
+ro.vendor.qti.sys.fw.empty_app_percent=50 \
+ro.vendor.qti.sys.fw.trim_empty_percent=100 \
+ro.vendor.qti.sys.fw.trim_cache_percent=100 \
+ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
