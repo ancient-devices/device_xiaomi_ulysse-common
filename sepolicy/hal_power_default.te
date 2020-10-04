@@ -5,3 +5,6 @@ allow hal_power_default proc_touchpanel:file rw_file_perms;
 # Allow writing to files in /dev/input/event2
 allow hal_power_default input_device:dir search;
 allow hal_power_default input_device:chr_file rw_file_perms;
+
+# Allow setting sysctl DT2W
+allow hal_power_default sysctl_dt2w:file rw_file_perms;
