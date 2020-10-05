@@ -76,18 +76,18 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt
 fi
 
 # Hax for cam configs
-sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
+sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
 
 # Wrap libgui_vendor into libwui
-sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmsw_platform.so
-sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera_ppeiscore.so
-sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_stats_modules.so
-sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmsw_detail_enhancement.so
-sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libmmsw_platform.so
-sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib64/libmmsw_detail_enhancement.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libmmsw_platform.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libmmcamera_ppeiscore.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libmmcamera2_stats_modules.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libmmsw_detail_enhancement.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib64/libmmsw_platform.so
+sed -i "s/libgui/libwui/g" "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib64/libmmsw_detail_enhancement.so
 
 # Shim libandroid for camera blobs
-patchelf --replace-needed libandroid.so libandroid_shim.so "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_stats_modules.so
-patchelf --replace-needed libandroid.so libandroid_shim.so "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmpbase.so
+patchelf --replace-needed libandroid.so libandroid_shim.so "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libmmcamera2_stats_modules.so
+patchelf --replace-needed libandroid.so libandroid_shim.so "$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary/vendor/lib/libmpbase.so
 
 "$MY_DIR"/setup-makefiles.sh
