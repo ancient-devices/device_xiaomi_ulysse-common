@@ -2190,8 +2190,8 @@ vendor/lib/libcdsprpc.so|ef4c2f1c3f2d6713590ea685daaecf34244279a6
 vendor/lib/libfastrpc_utf_stub.so|6da89a658b697bb5d7a8a2152ac73d57f445aae5
 vendor/lib/libsysmon_cdsp_skel.so|86f855e2e69076dc07e1fa215b8ad7fca018e193
 
-# Consumer IR
-vendor/lib64/hw/consumerir.default.so
+# Consumer IR - ugg 7.1.2 N2G47H V11.0.2.0.NDKMIXM
+vendor/lib64/hw/consumerir.default.so|0c7026fe6b1f3bbb4a41389cf8f9849c6a3202c6
 
 # DPM - from onc QKQ1.191008.001 V11.0.1.0.QFLCNXM
 framework/tcmclient.jar|6ef9ca98f67c144fc8ae941bb3a47f99cbd93098
