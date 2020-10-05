@@ -2093,9 +2093,9 @@ vendor/firmware/cpp_firmware_v1_5_2.fw|58dd7f7c09dbb62bc6f334a8885064b292610675
 vendor/firmware/cpp_firmware_v1_6_0.fw|dcd3d1f904c7ee3d731f8f28b5f78f2503916ada
 vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
 
-# Camera Hacks
-vendor/lib/vndk/libbinder.so|878062dea4925dd303ff026e07266f90fdb52c02
-vendor/lib/vndk-sp/libcutils.so|80f6e21fc5aade324dbc53967f6d129f9846ef29
+# Camera Hacks - from LineageOS 17.1
+lib/libbinder.so:vendor/lib/vndk/libbinder.so
+lib/libcutils.so:vendor/lib/vndk-sp/libcutils.so
 
 # CNE - from daisy QKQ1.191002.002 V11.0.11.0.QDLMIXM
 etc/cne/Nexus/ATT/ATT_profiles.xml|a0039cb3a4c5a4ca1adf897904b61c91e32d06f7
