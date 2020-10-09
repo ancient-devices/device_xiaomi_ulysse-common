@@ -383,9 +383,6 @@ PRODUCT_PACKAGES += \
     move_time_data.sh \
     move_wifi_data.sh
 
-PRODUCT_PACKAGES += \
-    init.safailnet.rc
-
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
