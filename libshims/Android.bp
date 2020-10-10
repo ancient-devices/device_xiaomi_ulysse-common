@@ -15,3 +15,10 @@ cc_library_shared {
         "libutils",
     ],
 }
+
+cc_library_shared {
+    name: "libshims_dpmd",
+    srcs: [
+        "libshims_dpmd.cpp",
+    ]
+}
