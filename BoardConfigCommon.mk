@@ -171,6 +171,9 @@ endif
 TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_ulysse
 TARGET_RECOVERY_DEVICE_MODULES := libinit_ulysse
 
+# Input
+TARGET_USES_HARDWARE_KEYS := true
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
