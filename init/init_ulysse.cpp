@@ -142,9 +142,9 @@ void vendor_load_properties()
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
 
     // Pixel identification
-    property_override("ro.build.description","coral-user 11 RP1A.200720.009 6720564 release-keys");
-    property_override("ro.build.fingerprint","google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
-    property_override("ro.system.build.fingerprint","google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys");
+    property_override("redfin-user 11 RD1A.200810.020 6792687 release-keys");
+    property_override("ro.build.fingerprint","google/redfin/redfin:11/RD1A.200810.020/6792687:user/release-keys");
+    property_override("ro.system.build.fingerprint","google/redfin/redfin:11/RD1A.200810.020/6792687:user/release-keys");
 
     // Front Flashlight
     property_set("persist.s5k3p8sp.flash.low","320");
