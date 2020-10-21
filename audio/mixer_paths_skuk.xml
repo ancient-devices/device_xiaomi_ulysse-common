@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-    Copyright (c) 2014, 2018, The Linux Foundation. All rights reserved.
+    Copyright (c) 2014, The Linux Foundation. All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -218,26 +218,7 @@
     </path>
 
     <path name="deep-buffer-playback bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
         <path name="deep-buffer-playback bt-sco" />
-    </path>
-
-    <path name="deep-buffer-playback speaker-and-bt-sco">
-        <path name="deep-buffer-playback bt-sco" />
-        <path name="deep-buffer-playback" />
-    </path>
-
-    <path name="deep-buffer-playback speaker-and-bt-sco-wb">
-        <path name="deep-buffer-playback bt-sco-wb" />
-        <path name="deep-buffer-playback" />
-    </path>
-
-    <path name="deep-buffer-playback wsa-speaker-and-bt-sco">
-        <path name="deep-buffer-playback speaker-and-bt-sco" />
-    </path>
-
-    <path name="deep-buffer-playback wsa-speaker-and-bt-sco-wb">
-        <path name="deep-buffer-playback speaker-and-bt-sco-wb" />
     </path>
 
     <path name="deep-buffer-playback afe-proxy">
@@ -250,10 +231,6 @@
 
     <path name="deep-buffer-playback speaker-and-usb-headphones">
         <path name="deep-buffer-playback usb-headphones" />
-        <path name="deep-buffer-playback" />
-    </path>
-
-    <path name="deep-buffer-playback speaker-and-headphones">
         <path name="deep-buffer-playback" />
     </path>
 
@@ -270,26 +247,7 @@
     </path>
 
     <path name="low-latency-playback bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
         <path name="low-latency-playback bt-sco" />
-    </path>
-
-    <path name="low-latency-playback speaker-and-bt-sco">
-        <path name="low-latency-playback bt-sco" />
-        <path name="low-latency-playback" />
-    </path>
-
-    <path name="low-latency-playback speaker-and-bt-sco-wb">
-        <path name="low-latency-playback bt-sco-wb" />
-        <path name="low-latency-playback" />
-    </path>
-
-    <path name="low-latency-playback wsa-speaker-and-bt-sco">
-        <path name="low-latency-playback speaker-and-bt-sco" />
-    </path>
-
-    <path name="low-latency-playback wsa-speaker-and-bt-sco-wb">
-        <path name="low-latency-playback speaker-and-bt-sco-wb" />
     </path>
 
     <path name="low-latency-playback afe-proxy">
@@ -307,10 +265,6 @@
 
     <path name="low-latency-playback transmission-fm">
         <ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia5" value="1" />
-    </path>
-
-    <path name="low-latency-playback speaker-and-headphones">
-        <path name="low-latency-playback" />
     </path>
 
     <path name="audio-ull-playback">
@@ -334,34 +288,12 @@
         <path name="audio-ull-playback bt-sco" />
     </path>
 
-    <path name="audio-ull-playback speaker-and-bt-sco">
-        <path name="audio-ull-playback bt-sco" />
-        <path name="audio-ull-playback" />
-    </path>
-
-    <path name="audio-ull-playback speaker-and-bt-sco-wb">
-        <path name="audio-ull-playback bt-sco-wb" />
-        <path name="audio-ull-playback" />
-    </path>
-
-    <path name="audio-ull-playback wsa-speaker-and-bt-sco">
-        <path name="audio-ull-playback speaker-and-bt-sco" />
-    </path>
-
-    <path name="audio-ull-playback wsa-speaker-and-bt-sco-wb">
-        <path name="audio-ull-playback speaker-and-bt-sco-wb" />
-    </path>
-
     <path name="audio-ull-playback afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia3" value="1" />
     </path>
 
     <path name="audio-ull-playback usb-headphones">
         <path name="audio-ull-playback afe-proxy" />
-        <path name="audio-ull-playback" />
-    </path>
-
-    <path name="audio-ull-playback speaker-and-headphones">
         <path name="audio-ull-playback" />
     </path>
 
@@ -376,24 +308,6 @@
     <path name="compress-offload-playback bt-sco-wb">
         <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
         <path name="compress-offload-playback bt-sco" />
-    </path>
-
-    <path name="compress-offload-playback speaker-and-bt-sco">
-        <path name="compress-offload-playback bt-sco" />
-        <path name="compress-offload-playback" />
-    </path>
-
-    <path name="compress-offload-playback speaker-and-bt-sco-wb">
-        <path name="compress-offload-playback bt-sco-wb" />
-        <path name="compress-offload-playback" />
-    </path>
-
-    <path name="compress-offload-playback wsa-speaker-and-bt-sco">
-        <path name="compress-offload-playback speaker-and-bt-sco" />
-    </path>
-
-    <path name="compress-offload-playback wsa-speaker-and-bt-sco-wb">
-        <path name="compress-offload-playback speaker-and-bt-sco-wb" />
     </path>
 
     <path name="compress-offload-playback afe-proxy">
@@ -411,10 +325,6 @@
 
     <path name="compress-offload-playback transmission-fm">
         <ctl name="INTERNAL_FM_RX Audio Mixer MultiMedia4" value="1" />
-    </path>
-
-    <path name="compress-offload-playback speaker-and-headphones">
-        <path name="compress-offload-playback" />
     </path>
 
     <path name="audio-record">
@@ -470,10 +380,6 @@
         <ctl name="Voice_Tx Mixer AFE_PCM_TX_Voice" value="1" />
     </path>
 
-    <path name="voice-call speaker-and-headphones">
-        <path name="voice-call" />
-    </path>
-
     <path name="voice2-call">
         <ctl name="PRI_MI2S_RX_Voice Mixer Voice2" value="1" />
         <ctl name="Voice2_Tx Mixer TERT_MI2S_TX_Voice2" value="1" />
@@ -492,10 +398,6 @@
     <path name="voice2-call usb-headphones">
        <ctl name="AFE_PCM_RX_Voice Mixer Voice2" value="1" />
        <ctl name="Voice2_Tx Mixer AFE_PCM_TX_Voice2" value="1" />
-    </path>
-
-    <path name="voice2-call speaker-and-headphones">
-        <path name="voice2-call" />
     </path>
 
     <path name="play-fm">
@@ -527,10 +429,6 @@
     <path name="vowlan-call usb-headphones">
         <ctl name="AFE_PCM_RX_Voice Mixer VoWLAN" value="1" />
         <ctl name="VoWLAN_Tx Mixer AFE_PCM_TX_VoWLAN" value="1" />
-    </path>
-
-    <path name="vowlan-call speaker-and-headphones">
-        <path name="vowlan-call" />
     </path>
 
     <path name="hfp-sco">
@@ -615,10 +513,6 @@
         <ctl name="VoLTE_Tx Mixer AFE_PCM_TX_VoLTE" value="1" />
    </path>
 
-    <path name="volte-call speaker-and-headphones">
-        <path name="volte-call" />
-    </path>
-
     <path name="compress-voip-call">
         <ctl name="PRI_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer TERT_MI2S_TX_Voip" value="1" />
@@ -632,10 +526,6 @@
     <path name="compress-voip-call bt-sco-wb">
         <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
         <path name="compress-voip-call bt-sco" />
-    </path>
-
-    <path name="compress-voip-call speaker-and-headphones">
-        <path name="compress-voip-call" />
     </path>
 
     <path name="listen-voice-wakeup-1">
