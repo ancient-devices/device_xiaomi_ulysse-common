@@ -209,6 +209,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0
 
+# Charger
+include $(LOCAL_PATH)/rootdir/charger/charger.mk
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
