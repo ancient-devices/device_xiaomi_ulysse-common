@@ -1,2 +1,2 @@
-allow surfaceflinger vendor_file:file { execute getattr open read };
+dontaudit surfaceflinger vendor_file:file { execute getattr open read };
 
