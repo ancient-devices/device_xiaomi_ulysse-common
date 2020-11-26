@@ -5,4 +5,5 @@ allow system_server vendor_idc_file:file r_file_perms;
 allow system_server proc:file { getattr };
 get_prop(system_server, userspace_reboot_config_prop);
 get_prop(system_server, userspace_reboot_exported_prop);
+allow system_server exported_camera_prop:file { read open getattr };
 
