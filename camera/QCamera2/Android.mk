@@ -89,6 +89,7 @@ LOCAL_C_INCLUDES := \
         $(TARGET_OUT_HEADERS)/mm-camera-lib/cp/prebuilt
 
 LOCAL_HEADER_LIBRARIES := media_plugin_headers
+LOCAL_HEADER_LIBRARIES += display_headers
 LOCAL_HEADER_LIBRARIES += libandroid_sensor_headers
 LOCAL_HEADER_LIBRARIES += libcutils_headers
 LOCAL_HEADER_LIBRARIES += libsystem_headers
