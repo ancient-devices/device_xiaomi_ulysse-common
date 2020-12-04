@@ -221,7 +221,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.3-service.clearkey \
+    libprotobuf-cpp-lite
 
 # Ebtables
 PRODUCT_PACKAGES += \
@@ -361,6 +362,11 @@ PRODUCT_COPY_FILES += \
 -include device/xiaomi/ulysse-common/vendor_prop.mk
 -include device/xiaomi/ulysse-common/product_prop.mk
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
@@ -406,6 +412,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
     librmnetctl \
     libcnefeatureconfig \
+    libprotobuf-cpp-full \
     libxml2 \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
@@ -463,8 +470,6 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so \
-    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libbinderthreadstate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderthreadstate.so
 
 # Tethering
