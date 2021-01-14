@@ -1,1 +1,2 @@
 type lirc_device, dev_type;
+type blkio_device, dev_type;

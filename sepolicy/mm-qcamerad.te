@@ -8,3 +8,5 @@ allow mm-qcamerad sysfs_graphics:file r_file_perms;
 allow mm-qcamerad camera_data_file:file create_file_perms;
 allow mm-qcamerad camera_data_file:dir w_dir_perms;
 allow mm-qcamerad persist_sensors_file:file rw_file_perms;
+allow mm-qcamerad sysfs:file read;
+
