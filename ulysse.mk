@@ -132,7 +132,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.a2dp@1.0-service \
     libbt-vendor \
-    libbthost_if
+    libbthost_if \
+    libldacBT_bco
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
