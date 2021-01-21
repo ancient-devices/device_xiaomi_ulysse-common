@@ -1,4 +1,5 @@
 #============= fsck ==============
 allow fsck self:capability kill;
 allow fsck sysfs_batteryinfo:dir search;
-
+allow fsck persist_block_device:blk_file read;
+allow fsck persist_block_device:blk_file { open write getattr ioctl };
