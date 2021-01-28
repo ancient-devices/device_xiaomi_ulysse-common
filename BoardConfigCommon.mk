@@ -208,7 +208,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_PER_MGR_ENABLED := true
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
+TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/dt2w"
 TARGET_USES_INTERACTION_BOOST := true
 
 # Qualcomm
