@@ -383,7 +383,8 @@ PRODUCT_PACKAGES += \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_enc_common
 
 # Non-fingerprint device patch
 PRODUCT_COPY_FILES += \
