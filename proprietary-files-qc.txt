@@ -2437,8 +2437,6 @@ vendor/lib64/libwms.so|076a7055d598669f782ca11f70a11e2c808757a7
 vendor/lib/libwms.so|39f5ad4a27fdfafaa40a8eb3eddbe7bfbd337582
 
 # Perf - from ASUS X00PD QKQ1.191002.002.WW_Phone-17.00.2003.23-20200401
-product/lib64/vendor.qti.hardware.perf@2.0.so|d4f082dcf0fedec3376144f91bc163c3c863ebd4
-product/lib/vendor.qti.hardware.perf@2.0.so|67fbeed3fce2a6521f9c1d39b6cab1cd1550bd2a
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|ed731317514e1992ac919a49a1f98e14e7a60eff
 vendor/bin/msm_irqbalance|b5e55b4b0934b65b7dd5d2201f9a70f6f77a4e7c
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
@@ -2447,13 +2445,11 @@ vendor/lib64/libperfgluelayer.so|ba4f771f239303a96b118cacdb38f6ce985b0e9b
 vendor/lib64/libqti-perfd-client.so|cfdfe3d443085feae4cf4af398d711722b904388
 vendor/lib64/libqti-perfd.so|7a5724fcb4a5a7a74d58e2641c051934b038905d
 vendor/lib64/libqti-util.so|4911109f327c4bf9d1d34acc14082f78e69b4ccb
-vendor/lib64/vendor.qti.hardware.perf@2.0.so|d4f082dcf0fedec3376144f91bc163c3c863ebd4
 vendor/lib/libperfconfig.so|a940ff08c5207ca4ba7e3c9f97c51b98da8bb0d0
 vendor/lib/libperfgluelayer.so|3c58ba816cf4480357b1ed934d2b44f17d00449f
 vendor/lib/libqti-perfd-client.so|eb81a99bab35f29b7977bde878ea2a29e2abe18c
 vendor/lib/libqti-perfd.so|bc6f03e63c9172c256c4b87ffd045667168adb1c
 vendor/lib/libqti-util.so|da7cfbe08e99dfa77fb29f06878b5d676af40d09
-vendor/lib/vendor.qti.hardware.perf@2.0.so|67fbeed3fce2a6521f9c1d39b6cab1cd1550bd2a
 
 # Perf Configs - from ASUS X00PD QKQ1.191002.002.WW_Phone-17.00.2003.23-20200401
 vendor/etc/perf/commonresourceconfigs.xml|d9fc3b49481536d6c7a25eb13f9f1d52d3ee8ff1
