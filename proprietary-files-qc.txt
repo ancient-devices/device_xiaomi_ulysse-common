@@ -2249,7 +2249,6 @@ vendor/bin/garden_app|bd13ba278d7b9781232f7c06f57e16e13c36fe47
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti|a199db62516c837b2d18fff4fe75ea3c9912954c
 vendor/bin/loc_launcher|1565f326b4fd46d6dfacd0e0804254611892d019
 vendor/bin/lowi-server|e1999a217da0addaa713c5f7650608cf2a360726
-vendor/bin/slim_daemon|071ec8afa27e0ee26f21e5091e0b9245ef233184
 vendor/bin/xtra-daemon|5269d753453fdb7fcbd4052873cdba490ff49391
 vendor/bin/xtwifi-client|6e5eb60c6b63489ac50739958a5a97e0ed718a81
 vendor/bin/xtwifi-inet-agent|5ca9d495374c8476e728e1c7609d0195fa0e871c
@@ -2276,7 +2275,6 @@ vendor/lib64/libloc_core.so|5b44b31d0a04d062757de07dbad7c54f8136de2a
 vendor/lib64/liblowi_client.so|7acedc7fb361d480280787b387d459547972342c
 vendor/lib64/liblowi_wifihal.so|7c9e875a2fabe222c9c531eaad1f1f81775880ca
 vendor/lib64/libqdma_file_agent.so|433aa88f1b332fa27bff190275d2ac23a2636a1b
-vendor/lib64/libslimclient.so|e64fdf63d18c47f8ac027879e359ad07d0b97c96
 vendor/lib64/libxtadapter.so|2ec1088cd47147899581fbedb31ebbc38a03f45c
 vendor/lib64/vendor.qti.gnss@1.0.so|40a85e0bc5fb4898dfcd7d5f0b75a5c6fd912dde
 vendor/lib64/vendor.qti.gnss@1.1.so|1e2400bd2f1f1252c790902b7b2d219e06f95834
