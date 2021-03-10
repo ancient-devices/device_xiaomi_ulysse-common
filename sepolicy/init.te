@@ -21,3 +21,4 @@ allow init sysfs_batteryinfo:file setattr;
 #allow init system_file:file execute_no_trans;
 allow init vendor_file:file execute;
 allow init blkio_device:file { create open read write mounton };
+allow init sysfs:file { open setattr write };

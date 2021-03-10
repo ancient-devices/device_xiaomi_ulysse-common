@@ -3,3 +3,7 @@ allow fsck self:capability kill;
 allow fsck sysfs_batteryinfo:dir search;
 allow fsck persist_block_device:blk_file read;
 allow fsck persist_block_device:blk_file { open write getattr ioctl };
+allow fsck mnt_vendor_file:dir getattr;
+allow fsck self:capability dac_override;
+allow fsck tmpfs:blk_file getattr;
+
