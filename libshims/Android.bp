@@ -18,6 +18,7 @@ cc_library_shared {
 
 cc_library_shared {
     name: "libshims_dpmd",
+    product_specific: true,
     srcs: [
         "libshims_dpmd.cpp",
     ]
