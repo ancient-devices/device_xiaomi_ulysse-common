@@ -62,6 +62,7 @@ endif
 ifneq ($(wildcard vendor/qcom/sdclang-8.0/linux-x86_64),)
 TARGET_KERNEL_CLANG_PATH := $(PWD)/vendor/qcom/sdclang-8.0/linux-x86_64
 endif
+TARGET_KERNEL_CLANG_VERSION := proton
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
