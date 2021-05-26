@@ -190,6 +190,3 @@ on property:ro.product.device=ugglite
 
 on property:ro.product.device=ugg
     setprop vendor.usb.rndis.func.name "rndis_bam"
-
-on boot
-    mount none /vendor/firmware_mnt /firmware bind
