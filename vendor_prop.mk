@@ -44,7 +44,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
-ro.qualcomm.bt.hci_transport=smd
+ro.qualcomm.bt.hci_transport=smd \
+ro.bluetooth.library_name=libbluetooth_qti.so \
+persist.vendor.btstack.enable.splita2dp=false \
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
+persist.bluetooth.a2dp_offload.disabled=true \
+persist.vendor.bluetooth.modem_nv_support=true \
+persist.vendor.bt.enable.splita2dp=false \
+persist.bluetooth.bluetooth_audio_hal.disabled=true \
+persist.bluetooth.bluetooth_audio_hal.enabled=false
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
