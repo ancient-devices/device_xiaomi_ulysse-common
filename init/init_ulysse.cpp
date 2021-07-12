@@ -50,8 +50,8 @@ char const *heapminfree;
 char const *heapmaxfree;
 char const *heaptargetutilization;
 
-char const  *build_fp = "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys";
-char const  *build_desc = "redfin-user 11 RQ2A.210505.003 7255357 release-keys";
+char const  *build_fp = "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys";
+char const  *build_desc = "redfin-user 11 RQ3A.210705.001 7380771 release-keys";
 
 int property_set(const char *key, const char *value) {
     return __system_property_set(key, value);
